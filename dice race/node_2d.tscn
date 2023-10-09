@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://7lalwvssvt6o"]
+
+[ext_resource type="Texture2D" uid="uid://c542yu32um415" path="res://dice6.png" id="1_vx6m8"]
+[ext_resource type="Script" path="res://diceScript.gd" id="2_3qjub"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="dice" type="Node2D" parent="."]
+position = Vector2(200, 200)
+
+[node name="Sprite2D" type="Sprite2D" parent="dice"]
+texture = ExtResource("1_vx6m8")
+
+[node name="diceScript" type="Node2D" parent="dice"]
+script = ExtResource("2_3qjub")
